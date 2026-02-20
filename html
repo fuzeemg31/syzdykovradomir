@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SwimShop — магазин для плавания</title>
+<style>
+body {
+margin: 0;
+font-family: 'Arial', sans-serif;
+background-color: #f0f4f8;
+}
+/* ===== МЕНЮ ===== */
+header {
+background-color: #b0c4de;
+padding: 10px 0;
+}
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+nav a {
+text-decoration: none;
+font-family: 'Georgia', serif;
+font-size: 18px;
+color: #000;
+}
+/* ===== ОБЛОЖКИ ===== */
+.cover {
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+padding: 120px 20px;
+text-align: center;
+}
+.cover h1, .cover h2, .cover p {
+color: #fff;
+font-family: 'Georgia', serif;
+}
+/* первая обложка */
+.cover-main {
+background-image: url('https://static.tildacdn.com/tild6434-3432-4532-a464-326334633936/112_6123-min.jpg');
+}
+/* вторая обложка */
+.cover-second {
+background-image: url('https://img.freepik.com/premium-photo/powerful-underwater-closeup-male-swimmer-gliding-with-goggles_661495-43692.jpg?semt=ais_hybrid&w=740');
+}
+/* ===== КАРТОЧКИ ===== */
+.container-flex {
+display: flex;
+gap: 15px;
+justify-content: center;
+padding: 50px 20px;
+}
+.card-flex {
+flex: 1 1 160px;
+display: flex;
+flex-direction: column;
+align-items: center;
+color: white;
+border-radius: 8px;
+text-align: center;
+padding: 10px;
+}
+.card-flex img {
+width: 120px;
+border-radius: 8px;
+margin-bottom: 10px;
+}
+.card-flex h3 {
+margin: 0 0 5px;
+font-family: 'Georgia', serif;
+}
+.card-flex p {
+margin: 0;
+font-size: 14px;
+}
+.card-flex:nth-child(1) { background-color: #AB274F; }
+.card-flex:nth-child(2) { background-color: #78DBE2; color: #1d3557; }
+.card-flex:nth-child(3) { background-color: #7FFFD4; }
+.card-flex:nth-child(4) { background-color: #4B5320; }
+.card-flex:nth-child(5) { background-color: #79553D; }
+/* ===== ПОДВАЛ ===== */
+footer {
+background-color: #d3d3d3;
+padding: 20px;
+margin-top: 40px;
+}
+footer ul {
+list-style-type: none;
+padding: 0;
+}
+</style>
+</head>
+<body>
+<!-- 1 ЭКРАН — МЕНЮ -->
+<header>
+<nav>
+<ul>
+<li><a href="#home">Главная</a></li>
+<li><a href="#shop">Магазин</a></li>
+<li><a href="#about">О нас</a></li>
+<li><a href="#contacts">Контакты</a></li>
+</ul>
+</nav>
+</header>
+<!-- 2 ЭКРАН — ОБЛОЖКА -->
+<section id="home" class="cover cover-main">
+<h1>SwimShop</h1>
+<p>Магазин товаров для плавания</p>
+</section>
+<!-- 3 ЭКРАН — КАРТОЧКИ -->
+<section id="shop">
+<h2 style="text-align:center; font-family:'Georgia', serif;">Наши товары</h2>
+<div class="container-flex">
+<div class="card-flex">
+<img src="https://avatars.mds.yandex.net/get-mpic/11370192/2a0000018c68956597bedb507fa4a6846c97/orig">
+<h3>Шапочки</h3>
+<p>Защита и комфорт</p>
+</div>
+<div class="card-flex">
+<img src="https://avatars.mds.yandex.net/get-mpic/1363210/2a00000191c8accc8ee70803165851eae842/orig">
+<h3>Очки</h3>
+<p>Чёткий обзор</p>
+</div>
+<div class="card-flex">
+<img src="https://ir.ozone.ru/s3/multimedia-r/6021776859.jpg">
+<h3>Плавки</h3>
+<p>Свобода движений</p>
+</div>
+<div class="card-flex">
+<img src="https://cdn1.ozone.ru/s3/multimedia-p/c600/6236251933.jpg">
+<h3>Купальники</h3>
+<p>Комфорт в воде</p>
+</div>
+<div class="card-flex">
+<img src="https://avatars.mds.yandex.net/get-mpic/5223143/img_id7815423907752532117.jpeg/orig">
+<h3>Аксессуары</h3>
+<p>Для тренировок</p>
+</div>
+</div>
+</section>
+<!-- 4 ЭКРАН — ВТОРАЯ ОБЛОЖКА -->
+<section id="about" class="cover cover-second">
+<h2>Почему выбирают нас</h2>
+<p>Качественные товары для любителей и профессионалов</p>
+</section>
+<!-- 5 ЭКРАН — ПОДВАЛ -->
+<footer id="contacts">
+<h3>Контакты</h3>
+<ul>
+<li>Телефон: +7 999 123 45 67</li>
+<li>Email: swimshop@mail.ru</li>
+<li><a href="#home">Наверх</a></li>
+</ul>
+</footer>
+</body>
+</html>
